@@ -1,5 +1,5 @@
 Flask
-Pillow
+Pillow==3.20.3
 gevent
 gunicorn
 keras
