@@ -1,5 +1,5 @@
 <div style="display: flex; align-items: center;">
-  <h1><img src="/static/images/icon.png" alt="App Icon" width="25" height="25"> DermatoBot</h1>
+  <h1><img src="/static/images/icon.png" alt="App Icon" width="25" height="25"> MedAI</h1>
 </div>
 
 It is a Flask application that utilizes AI algorithms to detect skin diseases and provide treatment susceptibility for patients. It offers an intelligent system that analyzes patient data and provides valuable insights for effective disease diagnosis and treatment planning.
