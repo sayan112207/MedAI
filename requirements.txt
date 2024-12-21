@@ -1,7 +1,8 @@
 Flask
-Pillow==3.20.3
+Pillow
 gevent
 gunicorn
 keras
 tensorflow
 numpy
+protobuf==3.20.3
