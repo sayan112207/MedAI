@@ -1,25 +1,35 @@
-* {
-
+/* Ensure the entire body and HTML are styled properly */
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%; /* Ensures the body takes the full height of the viewport */
+    overflow-y: hidden; /* Prevent vertical scrolling */
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: #061A1F;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    background: #061A1F;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* Adjust the container with bottom padding */
+.upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem; /* Add padding to the bottom */
+    box-sizing: border-box; /* Ensures padding doesn't expand the container */
+    color: aqua;
+}
 
+/* Center the button with some space below */
 button {
+    margin-top: 2rem;
     background-color: #58B2C9;
     border: none;
     border-radius: 8px;
@@ -28,63 +38,23 @@ button {
     padding: 15px 51px;
     cursor: pointer;
     text-align: center;
-    cursor: pointer;
-    opacity: .8;
-
+    opacity: 0.8;
 }
 
-/* 
-@media screen and (max-width:390px) {
-    div img {
-        width: 400px;
-        position: relative;
-        left: 0;
+/* Prevent button hover from expanding */
+button:hover {
+    opacity: 1;
+}
+
+/* Responsive rules */
+@media screen and (max-width: 390px) {
+    .upper img {
+        width: 100%;
+        max-width: 400px;
     }
 
     button {
-        background-color: #58B2C9;
-        flex-shrink: 0;
-        border: none;
-        color: white;
-        padding: 5px 22px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 22px;
-        border-radius: 12px;
-        position: relative;
-        bottom: 80px;
-        left: 70px;
-        cursor: pointer;
-
+        font-size: 16px;
+        padding: 10px 40px;
     }
-
-
-} */
-.upper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3rem;
-}
-.upper img{
-    height: 444px;
-    margin-top: 15x;
-    width: auto;
-    align-self: center;
-}
-
-.upper p{
-    color: #A2E4F6;
-    font-size: 28px;
-    width: 80%;
-    text-align: center;
-    align-self: center;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    line-height: 2rem;
-}
-button:hover {
-    opacity: 1;
 }
