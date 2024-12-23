@@ -1,25 +1,18 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 55px 0; /* Add padding only at the top and bottom */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 100vw;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    /* height: 100vh; */
+    min-height: 100vh; /* Ensure body always fills the viewport */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* padding-top: 22px; */
+    justify-content: flex-start; /* Adjust to align content at the top */
     background: #061A1F;
-    align-self: center;
-    justify-self: center;
-    overflow: hidden;
-    overflow-y: scroll;
+    overflow-x: hidden; /* Prevent horizontal scrolling only */
 }
 
 .center {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,14 +21,9 @@ body {
     border-radius: 12px;
     padding: 22px 22px;
     width: fit-content;
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
 
 h1 {
-    /* color: #89A6C9; */
     font-size: 32px;
     font-weight: 700;
     word-wrap: break-word;
@@ -45,11 +33,8 @@ h1 {
 .label {
     color: #000;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     margin-top: 15px;
-    /* line-height: normal; */
-
 }
 
 input {
@@ -61,12 +46,10 @@ input {
     margin-top: 8px;
     background-color: #dae3ef;
     border: 1px solid #89A6C9;
-
 }
 
-.btn_div * {
-    margin: 0px;
-    /* padding: 0px; */
+input::placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .btn_div {
@@ -76,7 +59,6 @@ input {
     justify-content: center;
     margin-top: 22px;
     width: 100%;
-
 }
 
 button {
@@ -86,45 +68,39 @@ button {
     font-size: 18px;
     padding: 15px 51px;
     cursor: pointer;
-    opacity: .9;
-    /* width: 270px;
-    height: 95px; */
-    /* font-weight: 400; */
-
+    opacity: 0.9;
 }
-button:hover{
+
+button:hover {
     opacity: 1;
 }
 
-a {
+.signup_link {
+    display: flex;
+    flex-direction: row; /* Ensure elements are in a single row */
+    align-items: center; /* Vertically align text */
+    justify-content: center; /* Center the content */
+    padding-top: 11px;
+}
+
+.signup_link h3 {
+    color: #061A1F;
+    font-size: 15px;
+    opacity: 0.7;
+    font-weight: 500;
+    padding-right: 4px; /* Add spacing between "Not a member?" and "Sign up Here" */
+    margin: 0; /* Remove default margins */
+}
+
+.signup_link a {
     color: #061A1F;
     font-size: 15px;
     text-decoration: none;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    margin: 4px; /* Remove default margins */
 }
 
-.singup_link{
-    padding-top: 11px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-}
-
-h3{
-    color: #061A1F;
-    font-size: 15px;
-    opacity: .7;
-    font-style: normal;
-    font-weight: 500;
-    padding-right: 4px;
-
-}
-
-.img{
+.img {
     height: 100px;
     width: auto;
     margin-bottom: 33px;

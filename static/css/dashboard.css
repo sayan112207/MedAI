@@ -1,7 +1,8 @@
-* {
-
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 body {
@@ -9,25 +10,22 @@ body {
     height: 100%;
     position: relative;
     background: #061A1F;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* background-color: red; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    padding-bottom: 1%;
 }
 
 div img {
     width: 350px;
     position: relative;
     bottom: 70px;
-    /* left: 500px; */
-
-
 }
 
 button {
+    margin-bottom: 2rem;
     background-color: #58B2C9;
     border: none;
     border-radius: 8px;
@@ -36,40 +34,22 @@ button {
     padding: 15px 51px;
     cursor: pointer;
     text-align: center;
-    cursor: pointer;
-    opacity: .8;
-
+    opacity: 0.8;
 }
 
-/* 
-@media screen and (max-width:390px) {
-    div img {
-        width: 400px;
-        position: relative;
-        left: 0;
+/* Responsive rules */
+@media screen and (max-width: 390px) {
+    .upper img {
+        width: 100%;
+        max-width: 400px;
     }
 
     button {
-        background-color: #58B2C9;
-        flex-shrink: 0;
-        border: none;
-        color: white;
-        padding: 5px 22px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 22px;
-        border-radius: 12px;
-        position: relative;
-        bottom: 80px;
-        left: 70px;
-        cursor: pointer;
-
+        font-size: 16px;
+        padding: 10px 40px;
+        margin-bottom: 20px;
     }
-
-
-} */
-
+}
 
 button:hover {
     opacity: 1;
