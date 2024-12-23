@@ -41,12 +41,12 @@ Make sure you have the following dependencies installed before running the proje
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/DermatoBot-SIH-1344.git
+   git clone https://github.com/sayan112207/MedAI.git
 
 2. Navigate to the project directory:
 
    ```bash
-   cd DermatoBot-SIH-1344
+   cd MedAI
 
 3. Install the required dependencies:
 
