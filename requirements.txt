@@ -5,4 +5,4 @@ gunicorn
 keras
 tensorflow
 numpy
-protobuf==4.25.8
+protobuf
