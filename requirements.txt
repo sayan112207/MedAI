@@ -3,6 +3,5 @@ Pillow
 gevent
 gunicorn
 keras
-tensorflow
 numpy
 protobuf
